@@ -1,0 +1,52 @@
+body {
+    padding: 20px;
+}
+
+.rotating-icon {
+    display: inline-block;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes twist-up {
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+button {
+    padding: 0.7rem;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+hr {
+    width: 50vw;
+}
+input,
+select {
+    padding: 0.7rem;
+}
+
+mrb-1 {
+    margin-bottom: 1rem;
+}
+
+.l2 {
+    p {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 50vw;
+    }
+}
